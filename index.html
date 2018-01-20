@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>Grupa A7</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Modulul</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Submodule</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Demo</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Modulul</a>
+    <a href="#work" class="w3-bar-item w3-button">Submodule</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Demo</a>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2><strong>Modulul de Generare de Teste</strong></h2>
+<h3>(grupa A7)</h3>
+<h4>Modulul de generare al testelor are ca scop principal generarea unor întrebări cu variante multiple de răspuns plecând de la o ontologie. Sub modulele acestui modul cuprind: 
+    Pre procesarea textelor.
+    Identificarea termenilor, relațiilor, proprietăților și a instanțelor.
+    Constituirea unei ontologii de bază și a inferențelor de administrare.
+</h4>
+
+<h4>Flow-ul aplicatiei:</h4>
+<img src="./modul.PNG" alt="flow">
+
+<h4><a href=https://docs.google.com/document/d/1-qd3E3MZbz9JT8SKFASdUk_7pdvYAyKywBr-eeKPJhE>Documentatie</a></h4>
+<h4><a href="./prezentare.pptx">Prezentare Powerpoint</a></h4>
+
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-theme-l1 w3-center" id="work">
+<h2><strong>Submodule</strong></h2>
+<h4><a href="https://github.com/hiezust/ai-conversion">Convertire &amp Documentatie</a></h4>
+<h4><a href="https://github.com/cristid9/ai-preprocessing">Preprocesare</a></h4>
+<h4><a href="https://github.com/francisc-neculau/jChunker/">Identificare Concepte, Instante si Relatii</a></h4>
+<h4><a href="https://github.com/samurake/IA-Ontology">Ontologii</a></h4>
+<h4><a href="https://github.com/silviudragan/IA_tests">Generare Teste</a></h4>
+
+
+</div>
+
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2><strong>Demo</strong></h2>
+    <a href="https://github.com/silviudragan/IA_tests">Aplicatia de generare de teste</a>
+
+    <h4><strong>Mentiuni:</strong></h4>
+    <h4>Aplicatia nu a putut fi integrata in totalitate, motiv pentru care nu s-a mai folosit generarea de output de <a href="https://github.com/francisc-neculau/jChunker">aici</a></h4>
+    <h4>Ca rezerva, am folosit o ontologie generata automat si nu a mai fost nevoie de generare a unui output dintr-un fisier doc(docx) sau pdf</h4>
+    <h4>Unealta folosita a fost: <a href="http://nlptools.info.uaic.ro/WebNpChunkerRo/">WebNpChunkerRo</a></h4>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-16 w3-theme-d1 w3-center">
+
+  <div style="position:relative;bottom:75px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
